@@ -1,0 +1,29 @@
+query Input {
+  cart {
+    lines {
+      id
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          title
+          localPickupType: metafield(namespace: "custom" key: "local_pickup_type") {
+            jsonValue
+          }
+          product {
+            id
+            title
+          }
+        }
+      }
+    }
+  }
+  locations {
+    id
+    handle
+    name
+    localPickupType: metafield(namespace: "custom", key: "local_pickup_type") {
+      jsonValue
+    }
+  }
+}
