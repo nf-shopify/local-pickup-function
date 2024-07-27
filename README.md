@@ -1,4 +1,5 @@
 # Shopify Function Template - Local Pickup Delivery Option Generator (app with extensions only)
+### Use Case - Oversized Item Pickup
 
 This is a template for building a Local Pickup Delivery Option Generator function that checks if the cart contains an "oversized" product and if so will only displays pickup locations that allow for "oversized" pickups to the customer at checkout. This app does not include an app home UI.
 
