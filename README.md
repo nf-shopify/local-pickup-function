@@ -1,6 +1,6 @@
 # Shopify Function Template - Local Pickup Delivery Option Generator (app with extensions only)
 
-This is a template for building a Local Pickup Delivery Option Generator functions that checks if the cart contains an "oversized" product and only displays pickup locations that allow for "oversized" pickups. This app does not include an app home UI.
+This is a template for building a Local Pickup Delivery Option Generator function that checks if the cart contains an "oversized" product and if so will only displays pickup locations that allow for "oversized" pickups to the customer at checkout. This app does not include an app home UI.
 
 It contains the basics for building a Shopify app that uses only app extensions. (https://shopify.dev/docs/apps/getting-started)
 
@@ -20,10 +20,10 @@ You can find function within extensions/local-pickup-function
 
 ### Prerequisites
 
-1. Creation of a text metafield on the varirant object to contain local pickup type - namespace: "custom", key: "local_pickup_type"
+1. Creation of a text metafield on the varirant object to store local pickup type.
 ![Location Metafield](https://screenshot.click/27-28-k44go-ugsoz.jpg)
 
-2. Creation of a text metafield on the location object to contain local pickup type - namespace: "custom", key: "local_pickup_type"
+2. Creation of a text metafield on the location object to store local pickup type.
 ![Location Metafield](https://screenshot.click/27-22-6fbft-5v64v.jpg)
 
 
